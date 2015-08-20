@@ -1,12 +1,187 @@
 @charset "utf-8";
+/* CSS Document */
+*{
+  margin:0;
+  padding:0;
+}
+img{
+  border:none;
+  vertical-align:middle;
+}
+a{
+  text-decoration:none;
+}
+ul,
+ol{
+  list-style:none;
+}
+html{
+  font-size:62.5%;
+}
+body{
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  line-height:1.6;
+  font-size:1.4rem;
+  background-color:#EFEFEF;
+}
 
+.wrap{
+  margin:0 auto;
+  width:100%;
+  max-width:900px;
+  background-color:#FFFFFF;
+}
 
+header{
+  background-color:#FFFFFF;
+}
 h1{
-	color:blue;
+  padding-left:1%;
 }
 
-
-.textColorRed{
-	color:red;
+#nav_list,
+nav{
+  overflow:hidden;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#fe0000', endColorstr = '#ae0000');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#fe0000', endColorstr = '#ae0000')";
+  background-image: -moz-linear-gradient(top, #fe0000, #ae0000);
+  background-image: -ms-linear-gradient(top, #fe0000, #ae0000);
+  background-image: -o-linear-gradient(top, #fe0000, #ae0000);
+  background-image: -webkit-gradient(linear, center top, center bottom, from(#fe0000), to(#ae0000));
+  background-image: -webkit-linear-gradient(top, #fe0000, #ae0000);
+  background-image: linear-gradient(top, #fe0000, #ae0000);
+}
+nav{
+  padding:4px 2%;
+}
+nav li{
+  float:left;
+  width:auto;
+  margin-right:2%;
+}
+nav a{
+  color:#FFFFFF;
 }
 
+#content{
+  padding:0 1% 10px 1%;
+  border:1px solid #CCCCCC;
+  margin-top:4px;
+}
+h2{
+  border-left:10px solid #FE0000;
+  padding-left:1%;
+  color:#FE0000;
+  font-size:1.4rem;
+  overflow:hidden;
+  background-color:#EFEFEF;
+  margin:10px 0 6px 0;
+}
+h3{
+  position: relative;
+  padding-left:10%;
+  color: #FE0000;
+  font-size: 1.4rem;
+}
+h3:before {
+  position: absolute;
+  top: 5px;
+  left: 1%;
+  width: 12px;
+  height: 12px;
+  background: #FE0000;
+  content: "";
+}
+#politics div{
+  border:1px solid #FE0000;
+  float:left;
+  width:30.1%;
+  height:131px;
+  margin:0 0 10px 1%;
+  padding:6px;
+}
+#vision{
+  clear:both;
+}
+#agenda_list{
+  width:76%;
+  float:left;
+  overflow:hidden;
+  margin-bottom:4px;
+}
+#agenda_list div{
+  border:1px solid #CCCCCC;
+  box-sizing:border-box;
+  width:32.6%;
+  float:left;
+  margin:0 1% 6px 0;
+  padding:6px 0.9%;
+  overflow:hidden;
+}
+#agenda_list div:nth-child(3n){
+  margin-right:0;
+}
+#agenda_button{
+  width:23.4%;
+  float:right;
+  border:1px solid #CCCCCC;
+  box-sizing:border-box;
+}
+#agenda_button li{
+  border-bottom:1px solid #CCCCCC;
+  box-sizing:border-box;
+}
+#agenda_button li a{
+  color:#333333;
+  display:block;
+  padding:4px 2%;
+}
+#slogan{
+  clear:both;
+}
+#slogan p{
+  text-align:center;
+  margin:10px 0 30px 0;
+}
+#slogan img{
+  width: 90%;
+}
+
+footer{
+  text-align:center;
+  color:#666666;
+  font-size:1rem;
+  padding:5px 0;
+}
+
+@media screen and (max-width: 640px) {
+body{
+  line-height:1.6;
+  font-size:1.4rem;
+}
+h1{
+text-align:center;
+}
+#politics div{
+  float:none;
+  width:94%;
+  height:auto;
+}
+#agenda_list{
+  width:100%;
+}
+#agenda_list div{
+  width:49%;
+  margin:0 1% 6px 0;
+  padding:6px 0.9%;
+}
+#agenda_list div:nth-child(2n){
+  margin-right:0;
+}
+#agenda_list div:nth-child(3n){
+  margin-right:1%;
+}
+#agenda_button{
+  display:none;
+}
+}

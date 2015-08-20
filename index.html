@@ -1,19 +1,120 @@
 <!doctype html>
-<html>
+<html lang="ja">
 <head>
 <meta charset="utf-8">
-<title>test site</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<title>MEMBERS WAY</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/main.js"></script>
 </head>
-
 <body>
 
-<h1>test site</h1>
-<p>test site sample text</p>
-<p>test site sample text</p>
-<p>test site sample text</p>
-<h2>test site sample text</h2>
-<p>test site sample text<img src="img/kaeru01.gif"><span class="textColorRed">text text</span></p>
+<header>
+  <div class="wrap">
+    <h1><a href="#"><img src="img/logo.png"></a></h1>
+  </div>
+</header>
+
+<div id="nav_list">
+  <nav class="wrap">
+    <ul>
+      <li><a href="#politics">経営理念</a></li>
+      <li><a href="#vision">ビジョン</a></li>
+      <li><a href="#action">行動指針</a></li>
+      <li><a href="#slogan">スローガン</a></li>
+    </ul>
+  </nav>
+</div>
+
+<div class="wrap">
+  <div id="content">
+    <div id="politics">
+      <h2>経営理念</h2>
+      <div id="idea_1">
+        <h3>1.消費者起点の豊かな社会の創造に貢献する</h3>
+        <p>マーケティング・テクノロジーの活用を通して消費者にとって便利で楽しい社会の創造に貢献する。</p>
+      </div>
+      <div id="idea_2">
+        <h3>2.ベンチャー・スピリットを発揮する</h3>
+        <p>自立的、主体的に、新しい分野に果敢に挑戦し続ける。</p>
+      </div>
+      <div id="idea_3">
+        <h3>3.個人の成長を通して価値を生み出す</h3>
+        <p>成長を願う個人をあらゆる機会に支援し、社会に提供する新しい価値の創造に努める。</p>
+      </div>
+    </div>
+    <div id="vision">
+      <h2>ビジョン</h2>
+      <p>メンバーズは、インターネット社会において双方向のマーケティング・テクノロジーにより消費者と企業とのベスト・マッチングを実現するナビゲーターとしての役割を果たし、消費者起点の社会の創造に貢献する。</p>
+    </div>
+    <div id="action">
+      <h2>行動指針</h2>
+      <div id="agenda_list">
+<!--         <div id="professional" class="action">
+          <h3>1.プロフェッショナルであれ</h3>
+          <p>高い能力と強い責任感を持ち、常にベストの成果を目指すプロフェッショナルであれ。</p>
+        </div>
+        <div id="subjective" class="action">
+          <h3>2.主体的に行動せよ</h3>
+          <p>困難にも決して逃げず、自ら考え、責任を引受け、正面から臨めば必ず道は開ける。</p>
+        </div>
+        <div id="client" class="action">
+          <h3>3.顧客の側から考えろ</h3>
+          <p>顧客の成長、顧客の利益の中にこそ我々の成長や利益はある。常に顧客の側から考えよ。</p>
+        </div>
+        <div id="scope" class="action">
+          <h3>4.視野を広げよ</h3>
+          <p>広く高い視野を持って仕事に取り組め。 大局的な判断がより大きな成果をもたらす。</p>
+        </div>
+        <div id="speed" class="action">
+          <h3>5.スピードを上げろ</h3>
+          <p>高い成果をより短時間で取り組むことが次の飛躍につながる。時間は資源であり、スピードは価値である。</p>
+        </div>
+        <div id="venture" class="action">
+          <h3>6.ベンチャー・スピリットを燃やせ</h3>
+          <p>新しいこと、困難なことに果敢に挑戦する者こそより大きな成果と成長を獲得できる。メンバーズはベンチャー・スピリットを持った集団である。</p>
+        </div>
+        <div id="sincerity" class="action">
+          <h3>7.誠実であれ</h3>
+          <p>自らに、仲間に、顧客に、社会に対して正直に向き合い、力をつくせ。 その誠意が信頼を築く。</p>
+        </div>
+        <div id="teamwork" class="action">
+          <h3>8.チームワークを重視せよ</h3>
+          <p>個人が集まりチームができ、チームが動いて事業が生まれる。チームプレイの積み重ねが優れた事業を創りだす。</p>
+        </div>
+        <div id="target" class="action">
+          <h3>9.高い目標を掲げろ</h3>
+          <p>人から設定されるのではなく、自ら高い目標を掲げ挑戦しろ。十分な準備をもってすれば必ず達成できる。</p>
+        </div>
+        <div id="motive" class="action">
+          <h3>10.高い志を持て</h3>
+          <p>高い志を抱き、社会に向き合い日々の仕事に邁進すれば、あなたの成長は加速する。</p>
+        </div> --> 
+     </div>
+      <ul id="agenda_button">
+        <li><a href="#professional">1.プロフェッショナルであれ</a></li>
+        <li><a href="#subjective">2.主体的に行動せよ</a></li>
+        <li><a href="#client">3.顧客の側から考えろ</a></li>
+        <li><a href="#scope">4.視野を広げよ</a></li>
+        <li><a href="#speed">5.スピードを上げろ</a></li>
+        <li><a href="#venture">6.ベンチャー・スピリットを燃やせ</a></li>
+        <li><a href="#sincerity">7.誠実であれ</a></li>
+        <li><a href="#teamwork">8.チームワークを重視せよ</a></li>
+        <li><a href="#target">9.高い目標を掲げろ</a></li>
+        <li><a href="#motive">10.高い志を持て</a></li>
+      </ul>
+    </div>
+    <div id="slogan">
+      <h2>3ヵ年スローガン</h2>
+      <p><img src="img/slogan.png"></p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Copylight &copy;Members Co.Ltd</p>
+</footer>
 
 </body>
 </html>
